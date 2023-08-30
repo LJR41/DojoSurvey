@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Form</title>
+</head>
+<body>
+    <div>
+        <form action="process" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" placeholder="I am..." name="name">
+            <label for="location">Dojo Location</label>
+            <select name="location" id="">
+                <option value="" hidden>Select A City</option>
+                <option value="San Jose">San Jose</option>
+                <option value="Seattle">Seattle</option>
+                <option value="Miami">Miami</option>
+            </select>
+            <label for="langauge">Favorite Language:</label>
+            <select name="language" id="">
+                <option value=""hidden>Select a Programming Language</option>
+                <option value="Javascript">Javascript</option>
+                <option value="Java">Java</option>
+                <option value="Python">Python</option>
+                <option value="C#">C#</option>
+            </select>
+            <label for="comment">Comment(optional)</label>
+            <textarea name="comment" id="" cols="30" rows="10" placeholder="Enter comment here..."></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
